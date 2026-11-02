@@ -1,6 +1,6 @@
 # 연구실 GPU 서버 자원 예약 및 실시간 모니터링 시스템
 
-[프로젝트 소개 사이트](https://2026-2-web-programming-term-project.github.io/) · [상세 WBS 초안](https://github.com/2026-2-web-programming-term-project/2026-2-web-programming-term-project.github.io/blob/main/docs/WBS.md)
+[프로젝트 소개 사이트](https://2026-2-web-programming-term-project.github.io/) · [통합 WBS](https://github.com/2026-2-web-programming-term-project/.github/blob/main/docs/WBS.md)
 
 연구실이 보유한 GPU 서버·노드의 상태를 확인하고 사용 시간을 예약하는 웹 서비스입니다. 연구원은 자원 상태·예약·알림·본인 이력을 확인하고, 관리자는 소속 연구실의 자원·회원·예약 정책과 통계를 관리합니다.
 
