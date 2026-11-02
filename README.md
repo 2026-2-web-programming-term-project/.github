@@ -1,6 +1,6 @@
 # 연구실 GPU 서버 자원 예약 및 실시간 모니터링 시스템
 
-[프로젝트 소개 사이트](https://2026-2-web-programming-term-project.github.io/) · [상세 WBS 초안](https://github.com/2026-2-web-programming-term-project/2026-2-web-programming-term-project.github.io/blob/main/docs/WBS.md)
+[프로젝트 소개 사이트](https://2026-2-web-programming-term-project.github.io/) · [통합 WBS](https://github.com/2026-2-web-programming-term-project/.github/blob/main/docs/WBS.md)
 
 연구실이 보유한 GPU 서버·노드의 실제 상태를 확인하고, 캘린더에서 사용 시간을 예약하는 웹 서비스입니다. 연구원과 팀원은 자원을 예약하고 본인의 사용 이력을 확인하며, 관리자는 소속 연구실의 자원·회원·예약 정책을 운영합니다.
 
@@ -18,7 +18,7 @@
 | JavaScript | 2026-11-20 23:59 | 화면 동작, 입력 검증, 목업 데이터를 이용한 기능 검증 |
 | 백엔드 | 2026-12-04 23:59 | API·데이터 저장·실시간 처리 구현과 실제 연동 |
 
-JavaScript 단계에서는 API 요청·응답 형식을 먼저 정하고 목업 데이터로 화면 동작을 검증합니다. 백엔드 단계에서 실제 API로 전환하고 통합 검증합니다. [WBS 초안](https://github.com/2026-2-web-programming-term-project/2026-2-web-programming-term-project.github.io/blob/main/docs/WBS.md)에서 세부 작업과 병행 인프라 일정을 관리합니다.
+JavaScript 단계에서는 API 요청·응답 형식을 먼저 정하고 목업 데이터로 화면 동작을 검증합니다. 백엔드 단계에서 실제 API로 전환하고 통합 검증합니다. [통합 WBS](https://github.com/2026-2-web-programming-term-project/.github/blob/main/docs/WBS.md)에서 세부 작업과 병행 인프라 일정을 관리합니다.
 
 ## 주요 기능
 
@@ -43,6 +43,10 @@ JavaScript 단계에서는 API 요청·응답 형식을 먼저 정하고 목업 
 
 예약 1시간 단위·최대 연속 8시간, 시작·종료 10분 전 알림 등은 UI 설계서의 제안값입니다. 최종 운영 정책은 별도로 확정합니다. M01·M02는 U01·U04의 반응형 표현으로 구현합니다.
 
+## 통합 WBS
+
+[통합 WBS](https://github.com/2026-2-web-programming-term-project/.github/blob/main/docs/WBS.md)에서 저장소별 주관 작업, 선행 관계, 계획 기간, 완료 기준과 상태를 관리합니다. 서비스 저장소에는 해당 구간의 링크를 두며 일정·상태를 별도 복사하지 않습니다. Front·API·Gateway·DB·Eureka 외에 공통 인프라와 통합 검증을 별도 작업 영역으로 추적합니다.
+
 ## 저장소 구성
 
 | 저장소 | 역할 | 현재 상태 |
@@ -51,7 +55,7 @@ JavaScript 단계에서는 API 요청·응답 형식을 먼저 정하고 목업 
 | [WP-TP-Gateway](https://github.com/2026-2-web-programming-term-project/WP-TP-Gateway) | 서비스 라우팅과 공통 요청 처리 | Spring Cloud Gateway 초기 프로젝트 |
 | [WP-TP-API](https://github.com/2026-2-web-programming-term-project/WP-TP-API) | 인증·자원·예약·알림·관리·통계 API | Spring Boot 초기 프로젝트 |
 | [WP-TP-DB](https://github.com/2026-2-web-programming-term-project/WP-TP-DB) | 데이터 모델, 스키마, 초기 데이터와 DB 운영 문서 | README·라이선스 |
-| [WP-TP-Eureka](https://github.com/2026-2-web-programming-term-project/WP-TP-Eureka) | 서비스 등록·조회와 디스커버리 | README·라이선스 |
+| [WP-TP-Eureka](https://github.com/2026-2-web-programming-term-project/WP-TP-Eureka) | 서비스 등록·조회와 디스커버리 | Spring Boot 초기 프로젝트 |
 | [.github](https://github.com/2026-2-web-programming-term-project/.github) | 공통 소개, 일정, 설계 방향 | 공통 문서 |
 
 상태는 2026-11-02의 기본 브랜치 파일을 기준으로 작성했습니다. 초기 프로젝트의 빌드·실행 및 서비스 간 연동은 별도 검증 대상입니다.
