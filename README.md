@@ -1,5 +1,7 @@
 # 연구실 GPU 서버 자원 예약 및 실시간 모니터링 시스템
 
+[프로젝트 소개 사이트](https://2026-2-web-programming-term-project.github.io/) · [상세 WBS 초안](https://github.com/2026-2-web-programming-term-project/2026-2-web-programming-term-project.github.io/blob/main/docs/WBS.md)
+
 연구실이 보유한 GPU 서버·노드의 실제 상태를 확인하고, 캘린더에서 사용 시간을 예약하는 웹 서비스입니다. 연구원과 팀원은 자원을 예약하고 본인의 사용 이력을 확인하며, 관리자는 소속 연구실의 자원·회원·예약 정책을 운영합니다.
 
 2026학년도 2학기 웹 프로그래밍 텀프로젝트로 개발합니다. 기능 구현과 함께 AWS Infrastructure Composer와 CloudFormation을 이용한 IaC, 다중 가용 영역 배치, EC2 Auto Scaling을 설계 범위에 포함합니다.
@@ -16,7 +18,7 @@
 | JavaScript | 2026-11-20 23:59 | 화면 동작, 입력 검증, 목업 데이터를 이용한 기능 검증 |
 | 백엔드 | 2026-12-04 23:59 | API·데이터 저장·실시간 처리 구현과 실제 연동 |
 
-JavaScript 단계에서는 API 요청·응답 형식을 먼저 정하고 목업 데이터로 화면 동작을 검증합니다. 백엔드 단계에서 실제 API로 전환하고 통합 검증합니다. 상세 WBS와 인프라 검증 일정은 별도로 구체화할 예정입니다.
+JavaScript 단계에서는 API 요청·응답 형식을 먼저 정하고 목업 데이터로 화면 동작을 검증합니다. 백엔드 단계에서 실제 API로 전환하고 통합 검증합니다. [WBS 초안](https://github.com/2026-2-web-programming-term-project/2026-2-web-programming-term-project.github.io/blob/main/docs/WBS.md)에서 세부 작업과 병행 인프라 일정을 관리합니다.
 
 ## 주요 기능
 
@@ -107,7 +109,7 @@ flowchart LR
 
 ## 문서와 홈페이지
 
-오거니제이션 프로필은 프로젝트 개요와 저장소 탐색을 제공합니다. GitHub Pages에는 주요 기능, 대표 UI, 인프라 개념도, 제출 일정을 소개하고 상세 설계·검증 결과는 관련 문서로 연결할 예정입니다. 실제 Spring 서비스의 배포 주소와 소개 페이지의 주소는 구분합니다.
+오거니제이션 프로필은 프로젝트 개요와 저장소 탐색을 제공합니다. [프로젝트 소개 사이트](https://2026-2-web-programming-term-project.github.io/)에서 주요 기능, 18개 UI 설계 화면, 인프라 개념도와 설계 방향, 제출 일정과 WBS를 확인할 수 있습니다. 실제 배포·성능 검증 결과는 검증 후 보완합니다. 실제 Spring 서비스의 배포 주소와 소개 페이지의 주소는 구분합니다.
 
 제안서와 UI 설계서를 요구사항 근거로 사용합니다. 인프라 코드는 템플릿, 설계 이유, 실제 배포 결과를 함께 관리하고, 계획·구현·검증 상태를 구분합니다.
 
